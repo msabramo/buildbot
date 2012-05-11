@@ -1,10 +1,11 @@
 language: python
 python:
+  - 2.5
   - 2.6
   - 2.7
 script:
-  - cd master && python setup.py test
-  - cd slave && python setup.py test
+  - ( cd master && python setup.py test )
+  - ( cd slave && python setup.py test )
 notifications:
   email:
     - marc@marc-abramowitz.com
